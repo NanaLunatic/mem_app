@@ -1,0 +1,72 @@
+.info
+  width 100%
+  position absolute
+  top 0
+  bottom 0
+  background $bg-color
+  .head
+    padding 15px 25px 0px 25px
+    font-size 12px
+    display flex
+    .text
+      flex 1
+      font-size 14px
+      color $font-color
+      text-align left
+    .date
+      flex 0 0 105px
+      width 105px
+      text-align right
+  .name
+    font-size 17px
+    color #232323
+    padding 15px 20px 5px 25px
+  .date-wrapper
+    background #fff
+    padding 10px 0
+    border 1px solid $border-color
+    .row-right
+      border 1px solid #ccc
+      height 20px
+      line-height 20px
+      max-width 180px
+      text-indent 10px
+      font-size 12px
+      font-weight normal
+    textarea.row-right
+        height 40px
+        resize: none
+        padding 0
+  .btn
+    width 200px
+    height 40px
+    line-height 40px
+    display block
+    margin 50px auto
+    font-size 15px
+.contract
+  width 100%
+  background #fff
+  padding 10px 0
+  border-top-bottom()
+  margin-top 10px
+  .info-wrapper
+    .item
+      display flex
+      font-size 16px
+      padding 5px 10px
+      color $font-color
+      &.light
+        color $primary-color
+        font-weight 600
+      &-title
+        flex 0 0 140px
+        text-align right
+        margin-right 12px
+      &-content
+        flex 1
+        text-align left
+        color #232323
+        word-break break-all
+        .tel
+          color #232323

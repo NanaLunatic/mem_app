@@ -1,0 +1,17 @@
+{
+    "apps": [{
+        "name": "mem_app",
+        "script": "bin/mem_app",
+        //"error_file"   : "./logs/mem_app-err.log",
+        //"out_file"    : "./logs/mem_app.log",
+        "merge_logs"   : true,
+        "log_date_format" : "YYYY-MM-DD HH:mm Z",
+        "cwd": "./",
+        "ignore_watch" : [
+         "node_modules"
+        ],
+        "watch_options": {
+         "followSymlinks": false
+        }
+       }]
+  }

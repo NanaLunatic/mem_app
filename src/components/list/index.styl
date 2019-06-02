@@ -1,0 +1,68 @@
+.list
+  position absolute
+  width 100%
+  overflow hidden
+  z-index 1
+  ul
+    width 100%
+    .item
+      padding 15px 20px 15px 31px
+      border-1px(#eee)
+      line-height 1.7
+      background #fff
+      position relative
+      .head
+        display flex
+        justify-content space-between
+        align-items center
+        position relative
+        .dot
+          position absolute
+          top 10px
+          left -15px
+          width 9px
+          height 9px
+          border-radius 50%
+          background $warn-color
+          margin-right 7px
+        .title
+          flex 1
+          font-size 17px
+          color #232323
+        .date
+          flex 0 0 115px
+          font-size 12px
+          color $font-color
+          text-align right
+      .type
+        color #727272
+        font-size 14px
+      .content, .check
+        font-size 14px
+        color $font-color
+        .light
+            color $primary-color
+            font-style normal
+      .reply
+        position absolute
+        right 15px
+        bottom 15px
+        font-size 12px
+        color $warn-color
+        &.light
+          color $primary-color
+      .check
+        .check-item
+          display inline-block
+          margin-right 10px
+          .light
+            color $primary-color
+            font-style normal
+          &.read
+            color $primary-color
+          &.primary
+            color $primary-color
+          &.warn
+            color $warn-color
+    .no-data
+      margin-top 100px

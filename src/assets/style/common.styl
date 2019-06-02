@@ -1,0 +1,130 @@
+@import './const.styl'
+@import './mixin.styl'
+/**  style 全局变量  **/
+
+/** 公共样式 **/
+html, body
+  font-size: 14px
+  color: $font-color
+  width 100%
+  height auto
+  background $bg-color
+  font-family: "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+
+/* vux调整  start */
+.tab-wrapper
+  .vux-tab
+    height 45px
+    .vux-tab-item
+      font-size 15px
+      line-height 45px
+      &.vux-tab-selected
+        font-weight 700
+/* vux调整  end */
+
+/* 行 */
+.row
+  display flex
+  font-size 14px
+  padding 5px 0
+  align-items: center
+  &-left
+    flex 0 0 140px
+    text-align right
+    margin-right 12px
+    color $font-color
+    display: inline-block
+    font-size 13px
+  &-right
+    flex 1
+    display: inline-block
+    font-size 13px
+    text-align left
+    color $font-color
+    font-weight 600
+    &.light
+      color $primary-color
+/* 按钮 */
+.btn
+  background: $primary-color
+  color #fff
+  font-size 13px
+  &:active
+    background: #1b628b
+.btn.plian
+  width 100px
+  border-radius 5px
+  padding 10px
+  color $primary-color
+  border 1px solid $primary-color
+  background: none
+  text-align center
+  &:active
+    color #1b628b
+    border 1px solid #1b628b
+
+/* 红色星星  */
+.star:before
+  content: '*'
+  color: #ed1111
+  margin-right: 4px
+
+/* 表单验证不通过 */
+.is-null
+  background pink
+/* 上下边框 */
+border-top-bottom($color = rgba(7,17,27,0.1))
+  border-top 1px solid $color
+  border-bottom 1px solid $color
+
+/* placeholder 样式 */
+::-webkit-input-placeholder
+    color #999
+:-moz-placeholder
+    color #999
+::-moz-placeholder
+    color #999
+:-ms-input-placeholder
+    color #999
+
+.contract-html
+  width 100%
+  padding 10px
+  box-sizing border-box
+  overflow hidden
+  font-size 13px
+  line-height 1.5
+  #buttons
+    display none
+  .title
+    text-align center
+    font-size 16px
+  .highlight
+    background #f5e715
+    .note
+      background #fff
+  table.blueTable
+    .tab-hide
+      display: none
+    tr
+      td
+        text-align center
+        border 1px solid #ccc
+        span
+          min-width 40px
+          display inline-block
+.contract-html 
+  .enclosure
+    overflow-x auto
+    p
+      position absolute
+    table
+      margin-top 20px
+.required::after
+  content: '*'
+  color: $warn-color
+  font-style: normal
+  margin-left 2px
+
+
+
